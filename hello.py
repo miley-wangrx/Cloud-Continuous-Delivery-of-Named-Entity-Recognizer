@@ -3,4 +3,4 @@ def cool(name):
         return "Cool!"
     return "Not cool at all.."
 
-    print(cool("Miley"))
+print(cool("Miley"))

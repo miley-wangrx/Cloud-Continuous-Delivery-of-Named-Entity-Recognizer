@@ -7,8 +7,8 @@ app = FastAPI()
 async def root():
     return {"message": "Hello Duke"}
 
-@app.get("/add/{num1}/{num2}")
-async def add(num1: int, num2: int):
+@app.get("/add/{num1}/{num2}") #route, where parameters get passed in
+async def add(num1: int, num2: int): # function
     """Add two numbers together"""
 
     total = num1 + num2
