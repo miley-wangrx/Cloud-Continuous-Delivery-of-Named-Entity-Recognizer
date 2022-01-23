@@ -1,9 +1,7 @@
 from hello import cool, toyou, add, subtract
 
 
-def test_cool():
-    assert cool("Miley") == "Cool!"
-    assert cool("Bubble") == "Not cool at all.."
+
 
 def setup_function(function):
     print(f" Running Setup: {function.__name__}")
@@ -18,6 +16,10 @@ def teardown_function(function):
 ### Run to see failed test
 #def test_hello_add():
 #    assert add(test_hello_add.x) == 12
+def test_cool():
+    assert cool("Miley") == "Cool!"
+    assert cool("Bubble") == "Not cool at all.."
 
 def test_hello_subtract():
     assert subtract(test_hello_subtract.x) == 9
+    
