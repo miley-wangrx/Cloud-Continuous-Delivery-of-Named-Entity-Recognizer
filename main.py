@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to Ruoxuan's NLP parser"}
+    return {"message": "Welcome to the named entity recognizer"}
 
 
 @app.get("/add/{num1}/{num2}")  # route, where parameters get passed in
@@ -17,8 +17,8 @@ async def add(num1: int, num2: int):  # function
     total = num1 + num2
     return {"total": total}
 
-@app.get("/predict/{input_sentence}") # route, where parameters get passed in
-async def predict(input_sentence):
+@app.get("/ner/{input_sentence}") # route, where parameters get passed in
+async def ner(input_sentence):
     model = spacy.load("en_core_web_sm")
     output = {}
     doc = model(input_sentence)
@@ -27,6 +27,8 @@ async def predict(input_sentence):
             label = "COUNTRY"
         elif entity.label_ == "LOC":
             label = "LOCATION"
+        elif entity.label_ == "ORG":
+            label = "ORGANIZATION"
         else:
             label = entity.label_
         output[entity.text] = label
