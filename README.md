@@ -6,10 +6,9 @@ This is a mini project of IDS721, in this project, a microserver was implemented
 
 Welcome to click [this link](https://dvk2iniydi.us-east-1.awsapprunner.com) and play with it!
 
-## Demo
-Here is a quick walkthrough:
-    [![Watch the video](https://imgur.com/vImHSOe)](https://youtu.be/eL_YWbZnuN0)
-
+## Demo Video
+[Here](https://youtu.be/eL_YWbZnuN0) is a quick walkthrough  
+    
 ## Features
 * The Microservice was built using Fast API
 * Used GitHub Actions as Build System to deploy changes
