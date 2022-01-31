@@ -8,7 +8,7 @@ Welcome to click [this link](https://dvk2iniydi.us-east-1.awsapprunner.com) and 
 
 ## Demo
 Here is a quick walkthrough:
-
+    [![Watch the video](https://imgur.com/vImHSOe)](https://youtu.be/eL_YWbZnuN0)
 
 ## Features
 * The Microservice was built using Fast API
