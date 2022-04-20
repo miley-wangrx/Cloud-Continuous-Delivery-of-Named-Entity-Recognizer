@@ -1,6 +1,6 @@
 [![Python Application test with GitHub actions](https://github.com/miley-wangrx/microservice/actions/workflows/main.yml/badge.svg)](https://github.com/miley-wangrx/microservice/actions/workflows/main.yml)
 
-# Microservice
+# Cloud Continuous Delivery of a Named Entity Recognizer
 ## Brief
 This is a mini project of IDS721, in this project, a microserver was implemented, which can be used as a named entity recognizer. The recognizer will locate and named entities mentioned in the input sentence and classsify them into pre-defined categories such as person names, organizations, locations, time expressions, quantities, monetary values, percentages, etc.
 
